@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Azure Consulting & Management</title>
+  <meta name="description" content="Learn about Azure Consulting & Management - Your trusted partner in real estate consulting">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="images/logo-azure.png" alt="Azure Consulting Logo">
+        <span class="logo-text">Azure Consulting</span>
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link" data-nav="home">Home</a></li>
+        <li><a href="services.html" class="nav-link" data-nav="services">Services</a></li>
+        <li><a href="about.html" class="nav-link active" data-nav="about">About</a></li>
+        <li><a href="contact.html" class="nav-link" data-nav="contact">Contact</a></li>
+        
+        <!-- Language Switcher -->
+        <li class="language-switcher">
+          <button class="language-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <span class="language-btn-text">EN</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="language-dropdown">
+            <div class="language-option active" data-lang="en">
+              <span>English</span>
+            </div>
+            <div class="language-option" data-lang="es">
+              <span>Español</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="index.html" class="nav-link" data-nav="home">Home</a>
+      <a href="services.html" class="nav-link" data-nav="services">Services</a>
+      <a href="about.html" class="nav-link active" data-nav="about">About</a>
+      <a href="contact.html" class="nav-link" data-nav="contact">Contact</a>
+      
+      <!-- Mobile Language Switcher -->
+      <div class="language-switcher" style="margin-top: 1rem;">
+        <button class="language-btn" style="width: 100%; justify-content: center;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <span class="language-btn-text">EN</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="language-dropdown">
+          <div class="language-option active" data-lang="en">
+            <span>English</span>
+          </div>
+          <div class="language-option" data-lang="es">
+            <span>Español</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 50vh;">
+    <div class="hero-bg" style="background-image: url('images/hero-background.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title" data-i18n="aboutPage.title">About Us</h1>
+      <p class="hero-subtitle" data-i18n="aboutPage.subtitle">Your trusted partner in real estate consulting and management</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/about-team.jpg" alt="Our Team">
+        </div>
+        <div class="about-text">
+          <h2>Our Story</h2>
+          <p data-i18n="aboutPage.intro">Azure Consulting & Management is a collation of professionals with a single goal: The success and the profit of your project or investment.</p>
+          <p data-i18n="aboutPage.commitment">Our commitment to our clients, creates a safe and quality environment, ensuring a constant working relationship with our clients. Our philosophy is to create a loop of effectiveness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Team Section -->
+  <section class="section section-gradient">
+    <div class="container">
+      <div class="about-content" style="direction: rtl;">
+        <div class="about-image" style="direction: ltr;">
+          <img src="images/professional-services.jpg" alt="Professional Services">
+        </div>
+        <div class="about-text" style="direction: ltr;">
+          <h2>Our Service Team</h2>
+          <p data-i18n="aboutPage.serviceTeam">Our service Team assists our clients with innovative ideas concerning economical designs, developing constructions, and budgetary solutions for your project. Additionally, our Project and Construction Management Team will guide you through the whole process of your project, to ensure all documents and goals are fully met, and your interests are always protected.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Experience Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="section-title" data-i18n="aboutPage.teamExperience.title">Team Experience</h2>
+      <p class="section-subtitle" data-i18n="aboutPage.teamExperience.description">Our Team is well established in the industry with over 28 years experience collectively. Experience includes Residential and Commercial Real Estate and Maintenance, as well as Project and Construction Management.</p>
+      
+      <!-- Stats -->
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">28+</div>
+          <div class="stat-label" data-i18n="aboutPage.stats.years">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label" data-i18n="aboutPage.stats.projects">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">300+</div>
+          <div class="stat-label" data-i18n="aboutPage.stats.clients">Happy Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">25+</div>
+          <div class="stat-label" data-i18n="aboutPage.stats.team">Team Members</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="section section-gradient">
+    <div class="container">
+      <h2 class="section-title">Our Values</h2>
+      
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <h3 class="value-title" data-i18n="aboutPage.values.excellence.title">Excellence</h3>
+          <p class="value-description" data-i18n="aboutPage.values.excellence.description">We strive for excellence in every project we undertake.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+          </div>
+          <h3 class="value-title" data-i18n="aboutPage.values.integrity.title">Integrity</h3>
+          <p class="value-description" data-i18n="aboutPage.values.integrity.description">We conduct our business with the highest ethical standards.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
+          <h3 class="value-title" data-i18n="aboutPage.values.commitment.title">Commitment</h3>
+          <p class="value-description" data-i18n="aboutPage.values.commitment.description">We are committed to our clients' success and satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo-azure.png" alt="Azure Consulting Logo">
+          <span class="logo-text">Azure Consulting & Management</span>
+        </div>
+        <p class="footer-text">© 2024 Azure Consulting & Management. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

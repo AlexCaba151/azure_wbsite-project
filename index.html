@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azure Consulting & Management</title>
+  <meta name="description" content="Professional real estate consulting and property management services in Miami, FL">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="images/logo-azure.png" alt="Azure Consulting Logo">
+        <span class="logo-text">Azure Consulting</span>
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active" data-nav="home">Home</a></li>
+        <li><a href="services.html" class="nav-link" data-nav="services">Services</a></li>
+        <li><a href="about.html" class="nav-link" data-nav="about">About</a></li>
+        <li><a href="contact.html" class="nav-link" data-nav="contact">Contact</a></li>
+        
+        <!-- Language Switcher -->
+        <li class="language-switcher">
+          <button class="language-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <span class="language-btn-text">EN</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="language-dropdown">
+            <div class="language-option active" data-lang="en">
+              <span>English</span>
+            </div>
+            <div class="language-option" data-lang="es">
+              <span>Español</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="index.html" class="nav-link active" data-nav="home">Home</a>
+      <a href="services.html" class="nav-link" data-nav="services">Services</a>
+      <a href="about.html" class="nav-link" data-nav="about">About</a>
+      <a href="contact.html" class="nav-link" data-nav="contact">Contact</a>
+      
+      <!-- Mobile Language Switcher -->
+      <div class="language-switcher" style="margin-top: 1rem;">
+        <button class="language-btn" style="width: 100%; justify-content: center;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <span class="language-btn-text">EN</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="language-dropdown">
+          <div class="language-option active" data-lang="en">
+            <span>English</span>
+          </div>
+          <div class="language-option" data-lang="es">
+            <span>Español</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image: url('images/hero-background.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title" data-i18n="hero.title">Welcome to Azure Consulting & Management</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">We specialize in providing professional guidance and customized solutions to assist you in achieving your objectives. We are grateful for your trust in us as your dependable partner.</p>
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn btn-primary" data-i18n="hero.getStarted">Get Started</a>
+        <a href="services.html" class="btn btn-secondary" data-i18n="hero.learnMore">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section section-gradient">
+    <div class="container">
+      <h2 class="section-title" data-i18n="optimizing.title">Optimizing your Real Estate Investment</h2>
+      <p class="section-subtitle" data-i18n="optimizing.subtitle">Comprehensive solutions for property management and real estate services</p>
+      
+      <div class="cards-grid">
+        <!-- Card 1: Quality Control -->
+        <div class="card">
+          <img src="images/quality-control.jpg" alt="Quality Control" class="card-image">
+          <div class="card-content">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>
+            </div>
+            <h3 class="card-title" data-i18n="cards.qualityControl.title">Integrating Project Quality Control</h3>
+            <p class="card-description" data-i18n="cards.qualityControl.description">Project quality control is essential for ensuring that the project meets its objectives and standards. It involves systematic monitoring, evaluation, and adjustment of processes to maintain quality throughout the project lifecycle.</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Investors -->
+        <div class="card">
+          <img src="images/real-estate-investment.jpg" alt="Real Estate Investment" class="card-image">
+          <div class="card-content">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            </div>
+            <h3 class="card-title" data-i18n="cards.investors.title">Owners & Investors Corner</h3>
+            <p class="card-description" data-i18n="cards.investors.description">Investing in real estate be a highly rewarding venture, but it requires careful consideration and strategic planning. To begin, it's to thoroughly research local markets to pinpoint areas that strong potential for growth and appreciation over time.</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Legal Services -->
+        <div class="card">
+          <img src="images/dream-home.jpg" alt="Legal Services" class="card-image">
+          <div class="card-content">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>
+            </div>
+            <h3 class="card-title" data-i18n="cards.legal.title">Legal Services</h3>
+            <p class="card-description" data-i18n="cards.legal.description">Our legal advisory covers every aspect of real estate in the USA and the Dominican Republic, ensuring that your investments and transactions are protected from start to finish.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo-azure.png" alt="Azure Consulting Logo">
+          <span class="logo-text">Azure Consulting & Management</span>
+        </div>
+        <p class="footer-text">© 2024 Azure Consulting & Management. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
