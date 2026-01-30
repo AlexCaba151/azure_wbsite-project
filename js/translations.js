@@ -12,7 +12,7 @@ const translations = {
     hero: {
       title: "Welcome to Azure Consulting & Management",
       subtitle: "We specialize in providing professional guidance and customized solutions to assist you in achieving your objectives. We are grateful for your trust in us as your dependable partner.",
-      getStarted: "Get Started",
+      getStarted: "Contact Us",
       learnMore: "Learn More"
     },
     // Services Section on Home
@@ -28,7 +28,7 @@ const translations = {
       },
       investors: {
         title: "Owners & Investors Corner",
-        description: "Investing in real estate be a highly rewarding venture, but it requires careful consideration and strategic planning. To begin, it's to thoroughly research local markets to pinpoint areas that strong potential for growth and appreciation over time. This will help you make informed decisions about where to invest your money. Additionally, think about diversifying your investments by exploring different types of properties, such as residential homes, commercial spaces, rental units. This approach can help mitigate risks and increase your chances a successful investment portfolio. Lastly, always take the time to evaluate the financial aspects of each investment opportunity. This includes analyzing cash flow, understanding ongoing expenses, and calculating potential returns to ensure that you are sound financial decisions. By following these guidelines, you can position yourself for success in the real estate."
+        description: "Investing in real estate can be a rewarding venture, but it requires careful planning and informed decision-making. It is important to research local markets to identify areas with strong growth potential and long-term appreciation. Diversifying investments across different property types, such as residential and commercial properties, can help reduce risk. In addition, evaluating financial factors like cash flow, ongoing expenses, and expected returns is essential to ensure each investment is financially sound and contributes to a successful real estate portfolio. "
       },
       legal: {
         title: "Legal Services",
