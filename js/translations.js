@@ -32,7 +32,7 @@ const translations = {
       },
       legal: {
         title: "Legal Services",
-        description: "Our legal advisory covers every aspect of real estate in the USA and the Dominican Republic, ensuring that your investments and transactions are protected from start to finish. We handle property purchases and sales, title verification, contract drafting and review, lease agreements, due diligence, zoning and regulatory compliance, property management support, and closing processes. Whether you are acquiring your dream home, managing rental properties, or expanding with commercial real estate, our team provides the legal guidance and protection you need for secure and successful transactions."
+        description: "Our legal advisory covers every aspect of real estate in the USA and the DR*, ensuring that your investments and transactions are protected from start to finish. We handle property purchases and sales, title verification, contract drafting and review, lease agreements, due diligence, zoning and regulatory compliance, property management support, and closing processes. Whether you are acquiring your dream home, managing rental properties, or expanding with commercial real estate, our team provides the legal guidance and protection you need for secure and successful transactions."
       }
     },
     // Services Page
