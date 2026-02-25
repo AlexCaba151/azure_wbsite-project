@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Catalog - Azure Consulting & Management</title>
+  <meta name="description" content="Browse available properties for rent and sale">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="images/logo-azure.png" alt="Azure Consulting Logo">
+        <span class="logo-text">Azure Consulting</span>
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link" data-nav="home">Home</a></li>
+        <li><a href="services.html" class="nav-link" data-nav="services">Services</a></li>
+        <li><a href="catalog.html" class="nav-link active" data-nav="catalog">Catalog</a></li>
+        <li><a href="about.html" class="nav-link" data-nav="about">About</a></li>
+        <li><a href="contact.html" class="nav-link" data-nav="contact">Contact</a></li>
+        
+        <!-- Language Switcher -->
+        <li class="language-switcher">
+          <button class="language-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <span class="language-btn-text">EN</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="language-dropdown">
+            <div class="language-option active" data-lang="en"><span>English</span></div>
+            <div class="language-option" data-lang="es"><span>Español</span></div>
+          </div>
+        </li>
+      </ul>
+      
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="index.html" class="nav-link" data-nav="home">Home</a>
+      <a href="services.html" class="nav-link" data-nav="services">Services</a>
+      <a href="catalog.html" class="nav-link active" data-nav="catalog">Catalog</a>
+      <a href="about.html" class="nav-link" data-nav="about">About</a>
+      <a href="contact.html" class="nav-link" data-nav="contact">Contact</a>
+      
+      <div class="language-switcher" style="margin-top: 1rem;">
+        <button class="language-btn" style="width: 100%; justify-content: center;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <span class="language-btn-text">EN</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="language-dropdown">
+          <div class="language-option active" data-lang="en"><span>English</span></div>
+          <div class="language-option" data-lang="es"><span>Español</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 50vh;">
+    <div class="hero-bg" style="background-image: url('images/catalog-background.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title" data-i18n="catalogPage.title">Property Catalog</h1>
+      <p class="hero-subtitle" data-i18n="catalogPage.subtitle">Discover available properties for rent and sale</p>
+    </div>
+  </section>
+
+  <!-- Filters Section -->
+  <section class="section section-dark" style="padding-top: 3rem; padding-bottom: 2rem;">
+    <div class="container">
+      <div class="catalog-filters">
+        <div class="filter-group">
+          <label class="form-label" data-i18n="catalogPage.filters.type">Type</label>
+          <select id="filter-type" class="form-select">
+            <option value="all" data-i18n="catalogPage.filters.all">All</option>
+            <option value="sale" data-i18n="catalogPage.filters.sale">For Sale</option>
+            <option value="rent" data-i18n="catalogPage.filters.rent">For Rent</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label class="form-label" data-i18n="catalogPage.filters.propertyType">Property Type</label>
+          <select id="filter-property-type" class="form-select">
+            <option value="all" data-i18n="catalogPage.filters.all">All</option>
+            <option value="house" data-i18n="catalogPage.filters.house">House</option>
+            <option value="apartment" data-i18n="catalogPage.filters.apartment">Apartment</option>
+            <option value="commercial" data-i18n="catalogPage.filters.commercial">Commercial</option>
+            <option value="land" data-i18n="catalogPage.filters.land">Land</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label class="form-label" data-i18n="catalogPage.filters.location">Location</label>
+          <select id="filter-location" class="form-select">
+            <option value="all" data-i18n="catalogPage.filters.all">All</option>
+            <option value="miami">Miami, FL</option>
+            <option value="dominican-republic" data-i18n="catalogPage.filters.dr">Dominican Republic</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label class="form-label" data-i18n="catalogPage.filters.priceRange">Price Range</label>
+          <select id="filter-price" class="form-select">
+            <option value="all" data-i18n="catalogPage.filters.all">All</option>
+            <option value="0-100000">$0 - $100,000</option>
+            <option value="100000-300000">$100,000 - $300,000</option>
+            <option value="300000-500000">$300,000 - $500,000</option>
+            <option value="500000-1000000">$500,000 - $1,000,000</option>
+            <option value="1000000+">$1,000,000+</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog Grid -->
+  <section class="section section-dark" style="padding-top: 1rem;">
+    <div class="container">
+      <div class="catalog-results-bar">
+        <p class="catalog-results-count"><span id="results-count">0</span> <span data-i18n="catalogPage.propertiesFound">properties found</span></p>
+      </div>
+      
+      <!-- Empty State -->
+      <div id="catalog-empty" class="catalog-empty" style="display: none;">
+        <div class="catalog-empty-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+        </div>
+        <h3 data-i18n="catalogPage.empty.title">No Properties Available</h3>
+        <p data-i18n="catalogPage.empty.description">There are no properties matching your criteria at this time. Please check back later or adjust your filters.</p>
+      </div>
+
+      <!-- Properties Grid -->
+      <div id="catalog-grid" class="catalog-grid"></div>
+    </div>
+  </section>
+
+  <!-- Property Detail Modal -->
+  <div id="property-modal" class="modal-overlay">
+    <div class="property-modal">
+      <button class="property-modal-close" id="modal-close-btn" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      
+      <!-- Image Gallery -->
+      <div class="property-gallery">
+        <div class="property-gallery-main">
+          <img id="modal-main-image" src="" alt="Property">
+          <button class="gallery-nav gallery-prev" id="gallery-prev" aria-label="Previous image">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button class="gallery-nav gallery-next" id="gallery-next" aria-label="Next image">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+          <div class="gallery-counter" id="gallery-counter">1 / 1</div>
+        </div>
+        <div class="property-gallery-thumbs" id="gallery-thumbs"></div>
+      </div>
+
+      <!-- Property Details -->
+      <div class="property-modal-body">
+        <div class="property-modal-header">
+          <div>
+            <span class="property-badge" id="modal-badge">For Sale</span>
+            <span class="property-type-badge" id="modal-type-badge">House</span>
+          </div>
+          <h2 class="property-modal-title" id="modal-title"></h2>
+          <p class="property-modal-location" id="modal-location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span id="modal-location-text"></span>
+          </p>
+        </div>
+
+        <div class="property-modal-price" id="modal-price"></div>
+
+        <div class="property-modal-stats" id="modal-stats"></div>
+
+        <div class="property-modal-description">
+          <h3 data-i18n="catalogPage.modal.description">Description</h3>
+          <p id="modal-description"></p>
+        </div>
+
+        <div class="property-modal-features" id="modal-features-container" style="display: none;">
+          <h3 data-i18n="catalogPage.modal.features">Features</h3>
+          <ul id="modal-features" class="property-features-list"></ul>
+        </div>
+
+        <div class="property-modal-actions">
+          <a href="contact.html" class="btn btn-accent" style="flex: 1;" data-i18n="catalogPage.modal.contact">Contact Us About This Property</a>
+          <button class="btn btn-secondary" onclick="document.getElementById('property-modal').classList.remove('show')" data-i18n="catalogPage.modal.close">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo-azure.png" alt="Azure Consulting Logo">
+          <span class="logo-text">Azure Consulting & Management</span>
+        </div>
+        <p class="footer-text">&copy; 2024 Azure Consulting & Management. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>
