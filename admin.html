@@ -218,6 +218,12 @@
   </div>
 
   <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  const supabaseUrl = "https://xwmuzdkyspthakftpibl.supabase.co";
+  const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh3bXV6ZGt5c3B0aGFrZnRwaWJsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIwMzYwNDksImV4cCI6MjA4NzYxMjA0OX0.9Y_ZGXz660XWSdjeXT_KSS0lK4K3ANXIYpLTJrFFB-o";
+  window.supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
+</script>
   <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
   <script src="js/admin.js"></script>
